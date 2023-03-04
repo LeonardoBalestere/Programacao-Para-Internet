@@ -3,17 +3,17 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:  
   web-deploy:
-  name: 🎉 Deploy
-  runs-on: ubuntu-latest
-  steps:
-  - name: 🚚 Get latest code
-    uses: actions/checkout@v3
-  
-  - name: 📂 Sync files
-    uses: SamKirkland/FTP-Deploy-Action@4.3.3
-    with:
-      server: ftpupload.net
-      username: epiz_33710539
-      password: ${{ secrets.ftp_password }}
-      protocol: ftp
-      port: 21 # todo replace with your web hosts ftps port
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: ftpupload.net
+        username: epiz_33710539
+        password: ${{ secrets.ftp_password }}
+        protocol: ftp
+        port: 21 # todo replace with your web hosts ftps port
