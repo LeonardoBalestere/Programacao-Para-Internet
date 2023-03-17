@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica clinica</title>
+</head>
+<body>
+    <main>
+<!--A página de cadastro deverá exibir um formulário contendo campos para o preenchimento das
+seguintes informações:
+Dados pessoais:
+• Nome (obrigatório);
+• E-mail (obrigatório);
+• CPF (obrigatório);
+• Idade (apenas números, obrigatório)
+• Telefone (obrigatório);
+• Data de nascimento (opcional);
+• Sexo (opcional);
+• Estado civil (opcional);
+Endereço
+• CEP (obrigatório);
+• Tipo de logradouro (rua, avenida, praça, etc.) (obrigatório, caixa de seleção)
+• Logradouro (obrigatório);
+• Bairro (obrigatório);
+• Cidade (obrigatório);
+• Estado (obrigatório
+Informações Adicionais
+• Campo opcional para seleção de interesses. Deve haver opções para que o usuário possa
+selecionar um ou vários campos de interesse (devem ser disponibilizadas pelo menos as
+opções: filmes, informática, games, livros e roupas);
+• Campo opcional para o fornecimento de informações complementares de forma textual e
+livre, que poderá conter múltiplas linhas de texto;
+• Campo opcional para anexar um arquivo de imagem -->
+        <form action="cadastro.php" method="post">
+            <fieldset>
+                <legend>
+                    Dados pessoais
+                </legend>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="email">E-mail</label>
+                <label for="CPF">CPF</label>
+                <input type="text" name="CPF" id="CPF" required>
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade" required>
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" required>
+                <label for="dataNascimento">Data de nascimento</label>
+                <label for="Sexo">Sexo</label>
+                <label for="estadoCivil">Estado civil</label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Endereço
+                </legend>
+                <label for="CEP">CEP</label>
+                <input type="text" name="CEP" id="CEP" required>
+                <label for="tipoLogradouro">Tipo de logradouro</label>
+                <select name="tipoLogradouro" id="tipoLogradouro" required>
+                    <option value="rua">Rua</option>
+                    <option value="avenida">Avenida</option>
+                    <option value="praça">Praça</option>
+                </select>
+                <label for="logradouro">Logradouro</label>
+                <input type="text" name="logradouro" id="logradouro" required>
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" required>
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" required>
+                <label for="estado">Estado</label>
+                <input type="text" name="estado" id="estado" required>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Informações adicionais
+                </legend>
+                <label for="interesses">Interesses</label>
+                <input type="checkbox" name="interesses" id="interesses" value="filmes">Filmes
+                <input type="checkbox" name="interesses" id="interesses" value="informática">Informática
+                <input type="checkbox" name="interesses" id="interesses" value="games">Games
+                <input type="checkbox" name="interesses" id="interesses" value="livros">Livros
+                <input type="checkbox" name="interesses" id="interesses" value="roupas">Roupas
+                <label for="informacoesComplementares">Informações complementares</label>
+                <textarea name="informacoesComplementares" id="informacoesComplementares" cols="30" rows="10"></textarea>
+                <label for="arquivo">Arquivo</label>
+                <input type="file" name="arquivo" id="arquivo">
+            </fieldset>
+            
+                
+    </main>
+</body>
+</html>
