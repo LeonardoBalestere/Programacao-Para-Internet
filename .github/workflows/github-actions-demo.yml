@@ -16,4 +16,4 @@ jobs:
         username: epiz_33710539
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftp
-        port: 21 # todo replace with your web hosts ftps port
+        port: 21
