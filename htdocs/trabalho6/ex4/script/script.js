@@ -11,7 +11,7 @@ openTab = (tabName) => {
     const lastTabActive = document.querySelector(".tabActive");
     if(lastTabActive !== null)
         lastTabActive.className = "";
-    
+     
     const lastButtonActive = document.querySelector(".buttonActive");
     if(lastButtonActive !== null)
         lastButtonActive.className = "";
